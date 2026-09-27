@@ -2,6 +2,12 @@
 
 A standalone website design concept for Sports & Ortho Physical Therapy. Includes the homepage, Our Team directory, natural-color photography and a cinematic four-scene hero film.
 
+## Public preview
+
+View the site at https://vyflow.github.io/sportandortho-v2/.
+
+GitHub Pages publishes the repository root from `main`. Updates pushed to that branch refresh the public preview.
+
 ## Preview locally
 
 No build step or package installation is required. From this folder:
