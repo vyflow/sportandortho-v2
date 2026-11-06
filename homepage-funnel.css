@@ -103,3 +103,15 @@
 .movement-principles { background: #16181b; border-block: 1px solid var(--line); }
 .movement-principles .process-grid h3 { font-size: clamp(2rem, 3vw, 2.625rem); }
 .pathway-work .photo-link img { object-position: center; }
+
+/* Cinematic photography: natural color, directional light and individual focal points. */
+.personal .personal-photo img { object-position: 48% 45%; filter: brightness(.88) contrast(1.08) saturate(.95); }
+.pathways .pathway-work .photo-link img { object-position: 40% 50%; }
+.pathways .pathway-sport .photo-link img { object-position: 50% 60%; }
+.pathways .pathway-surgery .photo-link img { object-position: 68% 50%; filter: brightness(.88) contrast(1.08) saturate(.92); }
+.closing .closing-image img { object-position: 52% 40%; }
+@media (max-width: 600px) {
+  .personal .personal-photo img { object-position: 50% 42%; }
+  .pathways .pathway-work .photo-link img { object-position: 40% 50%; }
+  .closing .closing-image img { object-position: 50% 35%; }
+}
