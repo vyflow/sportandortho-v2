@@ -1,0 +1,13 @@
+/* Shared social links for the v2 review pages. */
+.footer-social { display:flex; align-items:center; justify-content:space-between; gap:24px; padding:0 0 30px; }
+.footer-social > p { color:var(--text); font-size:.8125rem; line-height:1.6; }
+.footer-social nav { display:flex; flex-wrap:wrap; gap:12px; }
+.footer-social a { display:inline-flex; align-items:center; justify-content:center; width:56px; height:56px; border:1px solid var(--line); border-radius:50%; background:#ffffff04; transition:background .2s,border-color .2s; }
+.footer-social a:hover { background:#ffffff10; border-color:#ffffff70; }
+.footer-social svg { display:block; width:25px; height:25px; }
+@media(max-width:600px) {
+ .footer-social { align-items:flex-start; flex-direction:column; gap:14px; padding-bottom:26px; }
+ .footer-social nav { gap:10px; }
+ .footer-social a { width:44px; height:44px; }
+ .footer-social svg { width:22px; height:22px; }
+}
