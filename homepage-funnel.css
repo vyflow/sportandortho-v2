@@ -1,0 +1,105 @@
+/* Homepage journey: connected movement, active life and work injury recovery. */
+.access-strip {
+  border-block: 1px solid var(--line);
+  background: #181a1e;
+}
+.access-grid { display: grid; grid-template-columns: repeat(4, 1fr); padding-block: 34px; }
+.access-grid > div { padding: 6px 30px; border-left: 1px solid var(--line); }
+.access-grid > div:first-child { padding-left: 0; border: 0; }
+.access-grid strong { display: block; font: 700 2.75rem/1.05 Barlow, sans-serif; color: var(--white); }
+.access-grid span { display: block; font-size: .8125rem; line-height: 1.6; margin-top: 10px; }
+.personal { padding-block: 100px; }
+.personal .personal-grid { grid-template-columns: 1fr 1fr; gap: 90px; }
+.personal .personal-photo { height: 620px; }
+.personal .personal-copy h2 { font-size: 4rem; }
+.pathways .pathway-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.pathways .pathway { grid-row: auto; margin: 0; padding: 0; min-width: 0; }
+.pathways .pathway .photo-link { height: auto; aspect-ratio: 4 / 5; }
+.pathways .pathway-sport .photo-link img { object-position: center top; }
+.pathways .pathway .pathway-copy { padding-top: 26px; }
+.pathways .pathway h3 { font-size: 2.5rem; min-height: 2.2em; }
+.pathways .pathway-copy > p { font-size: 1rem; line-height: 1.75; margin-top: 17px; }
+.pathways .pathway-copy > p > strong { min-height: 3.1em; }
+.pathways .pathway .text-link { margin-top: 18px; }
+.care-process { background: #1c1e22; border-block: 1px solid #ffffff18; }
+.process-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); list-style: none; padding: 0; margin: 0; gap: 44px; }
+.process-grid li { padding-top: 26px; border-top: 2px solid var(--red); min-width: 0; }
+.step-label { color: var(--label); font-size: .6875rem; line-height: 1.6; letter-spacing: 1.3px; text-transform: uppercase; }
+.process-grid h3 { margin-block: 24px 18px; font-size: 2.625rem; line-height: 1.05; }
+.process-grid p { font-size: 1rem; line-height: 1.85; max-width: 360px; }
+.process-next { display: flex; align-items: center; gap: 30px; border-top: 1px solid var(--line); padding-top: 32px; margin-top: 48px; }
+.process-next > p { flex: 1; max-width: 370px; margin-right: auto; font-size: .9375rem; line-height: 1.75; }
+.process-next .text-link { font-size: .8125rem; }
+.patient-voices { background: #16181b; border-block: 1px solid #ffffff18; }
+.review-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.review-card { margin: 0; padding: 32px; border: 1px solid #ffffff21; border-radius: 5px; background: #22252a; display: flex; flex-direction: column; min-width: 0; }
+.review-theme { color: var(--label); text-transform: uppercase; letter-spacing: 1.2px; font-size: .625rem; line-height: 1.6; }
+.review-card blockquote { margin: 28px 0 36px; color: var(--white); font-size: 1.3125rem; line-height: 1.65; letter-spacing: -.25px; }
+.review-card figcaption { margin-top: auto; border-top: 1px solid #ffffff21; padding-top: 22px; font-size: .8125rem; line-height: 1.7; }
+.review-card figcaption strong { display: block; color: var(--white); }
+.review-card figcaption span { color: var(--text); }
+.review-note { margin-top: 22px; color: #abb1ba; font-size: .75rem; line-height: 1.7; }
+.closing .closing-copy { padding-block: 100px; }
+.closing .closing-copy h2 { font-size: 5.5rem; }
+.closing .closing-copy > p:not(.eyebrow) { max-width: 430px; }
+.closing .closing-visit { display: table; margin-top: 14px; font-size: .8125rem; }
+.closing .closing-copy > .closing-reassurance { font-size: .75rem; margin-top: 24px; margin-bottom: 0; }
+@media (max-width: 1100px) {
+  .access-grid > div { padding-inline: 20px; }
+  .access-grid strong { font-size: 2.25rem; }
+  .personal .personal-grid { gap: 48px; }
+  .personal .personal-copy h2 { font-size: 3.375rem; }
+  .pathways .pathway-grid { gap: 22px; }
+  .pathways .pathway h3 { font-size: 2.125rem; }
+  .pathways .photo-index { left: 10px; right: 10px; max-width: none; padding: 7px 8px; font-size: .5625rem; letter-spacing: .5px; }
+  .process-grid { gap: 30px; }
+  .process-grid h3 { font-size: 2.25rem; }
+  .process-next { flex-wrap: wrap; gap: 22px; }
+  .review-card { padding: 24px; }
+  .review-card blockquote { font-size: 1.125rem; }
+}
+@media (max-width: 900px) {
+  .personal { padding-block: 75px; }
+  .personal .personal-photo { height: 520px; }
+  .personal .personal-copy h2 { font-size: 2.8125rem; }
+  .pathways .pathway h3 { min-height: 0; }
+  .pathways .pathway-copy > p > strong { min-height: 0; }
+  .process-next > p { flex-basis: 100%; max-width: none; }
+  .review-grid { grid-template-columns: 1fr; gap: 16px; }
+  .review-card { padding: 28px; }
+  .review-card blockquote { margin-block: 20px; font-size: 1.25rem; }
+  .review-card figcaption { display: flex; justify-content: space-between; gap: 20px; }
+}
+@media (max-width: 600px) {
+  .access-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); padding-block: 10px; }
+  .access-grid > div { padding: 23px 16px; }
+  .access-grid > div:nth-child(odd) { border-left: 0; padding-left: 0; }
+  .access-grid > div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+  .access-grid strong { font-size: 2rem; }
+  .access-grid span { font-size: .6875rem; margin-top: 7px; }
+  .personal { padding-block: 46px 70px; }
+  .personal .personal-grid { gap: 34px; }
+  .personal .personal-photo { height: auto; aspect-ratio: 4 / 5; }
+  .personal .personal-copy h2 { font-size: 2.875rem; }
+  .pathways .pathway-grid { display: grid; grid-template-columns: 1fr; gap: 42px; }
+  .pathways .pathway .photo-link { aspect-ratio: 4 / 5; }
+  .pathways .pathway h3 { font-size: 2.375rem; }
+  .pathways .pathway-copy > p { font-size: 1.0625rem; }
+  .pathways .photo-index { left: 16px; right: auto; padding: 7px 9px; letter-spacing: 1px; }
+  .process-grid { grid-template-columns: 1fr; gap: 32px; }
+  .process-grid li { padding-top: 20px; }
+  .process-grid h3 { font-size: 2.375rem; margin-block: 18px 14px; }
+  .process-grid p { font-size: 1.0625rem; line-height: 1.75; }
+  .process-next { margin-top: 32px; padding-top: 26px; gap: 14px; }
+  .process-next .button { width: 100%; }
+  .review-card { padding: 25px 22px; }
+  .review-card blockquote { font-size: 1.125rem; }
+  .review-card figcaption { flex-wrap: wrap; gap: 4px 20px; }
+  .closing .closing-copy { padding-block: 140px 64px; }
+  .closing .closing-copy h2 { font-size: 4rem; }
+  .closing .closing-copy > .closing-reassurance { font-size: .6875rem; }
+}
+
+.movement-principles { background: #16181b; border-block: 1px solid var(--line); }
+.movement-principles .process-grid h3 { font-size: clamp(2rem, 3vw, 2.625rem); }
+.pathway-work .photo-link img { object-position: center; }

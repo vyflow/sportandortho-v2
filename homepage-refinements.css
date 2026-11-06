@@ -1,0 +1,38 @@
+/* Local messaging review. Existing homepage components only; no hero rules. */
+.pathways .section-heading { align-items: center; }
+.pathways .section-heading > p { max-width: 340px; }
+.pathways .pathway-copy > p { max-width: 410px; }
+.pathways .pathway-copy > p > strong,
+.services .service-body > p:first-child > strong {
+  display: block;
+  color: var(--white);
+  font-weight: 600;
+  line-height: 1.55;
+  margin-bottom: 10px;
+}
+.personal .personal-copy > p:not(.eyebrow) {
+  max-width: 450px;
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+.personal .personal-copy .text-link { margin-top: 12px; }
+.services .service-body { padding-bottom: 28px; }
+.services .service-body > p:first-child { max-width: 430px; }
+.services .service-body .availability {
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+.services .directory-bottom { gap: 28px; align-items: center; }
+.services .directory-bottom > p { max-width: 500px; line-height: 1.75; }
+.locations .location-note { max-width: 720px; line-height: 1.85; }
+.closing .closing-copy > p:not(.eyebrow) { max-width: 420px; }
+@media (max-width: 900px) {
+  .pathways .section-heading { align-items: flex-start; }
+  .pathways .section-heading > p { max-width: 250px; }
+  .services .directory-bottom { gap: 20px; }
+}
+@media (max-width: 600px) {
+  .pathways .section-heading > p { max-width: none; }
+  .personal .personal-copy > p:not(.eyebrow) { font-size: 1.0625rem; }
+  .services .directory-bottom { gap: 16px; }
+}
