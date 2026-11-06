@@ -1,10 +1,10 @@
-/* Monochrome social marks on restrained cinematic controls. */
+/* Original-color social marks with open, borderless hit areas. */
 .footer-social { display:flex; align-items:center; justify-content:space-between; gap:24px; padding:0 0 30px; }
 .footer-social > p { color:var(--text); font-size:.6875rem; line-height:1.6; letter-spacing:1.2px; text-transform:uppercase; }
 .footer-social nav { display:flex; flex-wrap:wrap; gap:12px; }
-.footer-social a { display:inline-flex; align-items:center; justify-content:center; width:56px; height:56px; border:1px solid var(--line); border-radius:3px; color:#c3c8cf; background:transparent; transition:color .2s,background .2s,border-color .2s; }
-.footer-social a:hover { color:var(--label); background:#e600280a; border-color:var(--red); }
-.footer-social a:focus-visible { color:var(--white); outline:2px solid var(--label); outline-offset:4px; border-color:var(--label); }
+.footer-social a { display:inline-flex; align-items:center; justify-content:center; width:56px; height:56px; border:0; border-radius:0; background:transparent; transition:opacity .2s; }
+.footer-social a:hover { opacity:.75; }
+.footer-social a:focus-visible { outline:2px solid var(--label); outline-offset:2px; }
 .footer-social svg { display:block; width:25px; height:25px; }
 @media(max-width:600px) {
  .footer-social { align-items:flex-start; flex-direction:column; gap:14px; padding-bottom:26px; }
